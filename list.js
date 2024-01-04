@@ -257,7 +257,7 @@ function ObjectLength( object ) {
 async function get() {
     console.log("fetch");
     try {
-      const response = await fetch("http://localhost:3000/data");
+      const response = await fetch("https://back-end-hosting.onrender.com/data");
       const fetchedData = await response.json();
       data = fetchedData;
       console.log(data);
@@ -269,7 +269,7 @@ async function get() {
 
 function Delete(){
     console.log( deleteId);
-    fetch("http://localhost:3000/deleteData", {
+    fetch("https://back-end-hosting.onrender.com/deleteData", {
     method: "DELETE",
     headers: {
         "Content-Type": "application/json"
@@ -282,7 +282,7 @@ function Delete(){
 
 function put(){
     console.log(updateData);
-    fetch("http://localhost:3000/updateData",{
+    fetch("https://back-end-hosting.onrender.com/updateData",{
         method:"PUT",
         headers:{
             "Content-Type": "application/json"
@@ -295,7 +295,7 @@ function put(){
 }
 function post(){
     console.log(newData);
-    fetch("http://localhost:3000/PostData",{
+    fetch("https://back-end-hosting.onrender.com/PostData",{
         method:"POST",
         headers:{
             "Content-Type": "application/json"
