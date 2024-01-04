@@ -44,7 +44,7 @@ async function generateMap() {
       async function get() {
         console.log("fetch");
         try {
-          const response = await fetch("http://localhost:3000/data");
+          const response = await fetch("https://back-end-hosting.onrender.com/data");
           const fetchedData = await response.json();
           data = fetchedData;
           console.log(data);
