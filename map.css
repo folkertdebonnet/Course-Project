@@ -1,0 +1,167 @@
+@font-face {
+    font-family: 'RussiaBlack';
+    src: url('./Fonts/3900-font.otf') format('opentype');
+    font-weight: black;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Mixal';
+    src: url('./Fonts/Mixal-Heavy.otf') format('opentype');
+    font-weight: black;
+    font-style: normal;
+}
+
+
+::-webkit-scrollbar {
+    width: 0px
+
+}
+
+body {
+    font-family: 'RussiaBlack';
+    background-color: #592d8b;
+    margin: 0px;
+
+    color: #cddc29;
+}
+#overlay {
+    display: none;
+    position: fixed;
+    width: 450px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #592d8b;
+    z-index: 2;
+    border-radius: 30px;
+    border: solid  ;
+    border-width: 2px;
+    border-color: #cddc29;
+    
+}
+.input {
+    position: relative;
+    margin-left: 20px;
+}
+.input img{
+    width: 60px;
+    position: absolute;
+    top: 640px;
+    left: 290px;
+    cursor: pointer;
+    
+}
+.map-text h1{
+    position:absolute;
+    text-orientation: upright;
+    writing-mode: vertical-rl;
+    font-family: "mixal";  
+    font-size: 100px;  
+    border-radius: 42px;
+    border: solid  ;
+    border-width: 2px;
+    background-color: #592d8b;
+    padding: 15px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 90px;
+    margin-left: 20px;
+    z-index: 1;
+
+}
+#map {
+     position: absolute; 
+     top: 0px; 
+     bottom: 0px;
+     height:  659px; 
+     z-index: 0;
+     width: 100%; }
+
+header {
+    height: 90px;
+    display: flex;   
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.box {
+    flex: 2;
+    margin: 10px;
+    border-radius: 30px;
+    border: solid  ;
+    border-width: 2px;
+    border-color: #cddc29;
+}
+
+.nav{
+    flex: 8;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 30px;
+    border: solid  ;
+    border-width: 2px;
+    border-color: #cddc29;
+    text-align: center;
+} 
+.nav img {
+    
+    width: 15%;
+    margin-top: 10px;
+}
+
+.navtext a{
+    text-decoration: none;
+    font-size: 15pt;
+    
+
+}
+
+.Listtext {
+    text-decoration: none;
+    font-size: 17pt;
+    -webkit-text-stroke: 1px #cddc29;
+    color: #592d8b;
+}
+.maptext{
+    color: #cddc29;
+}
+.Listtext:hover{ 
+    color: #cddc29;
+}
+.maptext:hover{
+    color: #592d8b;
+    -webkit-text-stroke: 1px #cddc29;
+}
+main {
+    position: relative;
+    height: 100%4;
+
+}
+
+.filter{
+    position: relative;
+    z-index: 1;
+
+}
+
+
+  .filter img.Sirv.image-hover {    
+    width: 80px;
+    position: absolute;
+    top: 547px;
+    left: 46px;
+    object-fit: contain;
+    opacity: 0;
+    transition: opacity .2s;
+  }
+  .filter:hover img.image-hover {
+    opacity: 1;
+  }
+
+  .Sirv-image-main{
+    position: absolute;
+    top: 547px;
+    left: 46px;
+    width: 80px;
+  }
